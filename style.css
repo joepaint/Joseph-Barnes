@@ -1,0 +1,378 @@
+:root{
+    --salmon:#ED695C;
+    --lightblue:#30BDF0;
+    --gray:#273033;
+    --darkblue:#185970;
+    --black:#05141A;
+    --white:#F5FAFC;
+
+}
+/* body styles for each page */
+#index{
+  background-color: var(--white);
+}
+#portfolio{
+  
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/can-lineup.png");
+    background-size: cover;
+    background-attachment:fixed;
+}
+/* links */
+a{
+  text-decoration:none;
+  color:var(--salmon);
+}
+p{
+  
+    font-family: "Montserrat", sans-serif;
+    font-size:1rem;
+    line-height:150%;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+  h1{
+    display:inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size:2.5rem;
+    line-height:100%;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @media(max-width:700px){
+      font-size:1.8rem;
+     }
+  }
+
+  h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /*color:var(--white);*/
+    font-size:1.5rem;
+    
+  }
+
+  /* index page positioning for grid */
+.main-container{
+  margin: 100px auto;
+  max-width:800px;
+  @media(max-width:700px){
+    margin: 50px auto;
+  }
+}
+
+/*index page grid*/
+.grid-container{
+  
+
+  display:grid;
+  
+  margin:auto auto auto 80px;
+  width:fit-content;
+  gap:5px;
+  transition: gap .2s;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows:1fr;
+  @media(max-width:700px){
+      margin: auto;
+     
+      
+      grid-template-columns:1fr 1fr;
+  }
+  
+}
+
+/*index page grid circles*/
+.grid-circle{
+ margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+ border-radius:50%;
+ filter: drop-shadow(5px 5px 5px var(--black));
+/* background-color:var(--secondary2);*/
+ 
+ background:var(--gray);
+ width:140px;
+ height:140px;
+ color:var(--white);
+ transition: all .2s ease-out;
+}
+
+.grid-circle:hover{
+  
+  border-radius:20%;
+ 
+  color:var(--salmon);
+}
+/*index page JOSEPH BARNES*/
+.grid-name{
+  margin: auto 20px auto auto ;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+ border-radius:25px;
+ filter: drop-shadow(5px 5px 5px var(--black));
+ padding:20px 0 20px 0;
+ grid-area: span 3 / span 1;
+
+background:var(--gray);
+  color:var(--gray);
+transition: transform 1s,
+            color 2s;
+ 
+
+ @media(min-width:701px){
+  writing-mode:vertical-lr;
+  transform:rotate(180deg);
+  
+ }
+
+ @media(max-width:700px){
+  grid-area: span 1 / span 2;
+  margin: auto auto 0 auto;
+  padding:0 10px 0 10px  ;
+  border-radius:15px;
+  color:var(--salmon);
+ }
+}
+
+
+
+.grid-name:hover {
+ /* animation-name: rotate; 
+  animation-duration: 1s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  */
+  color:var(--salmon);
+}
+
+/*
+@keyframes rotate {
+  from {transform: rotate(180deg);}
+  to { transform: rotate(540deg);}
+}
+*/
+
+
+/*class for background videos*/
+#bgVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+/*header grid for every page but index*/
+.header-grid{
+  display:grid;
+  position:fixed;
+  top:0;
+  max-width:90%;
+  grid-auto-columns: min-content;
+  grid-auto-flow:column;
+  gap:5px;
+  z-index:1;
+  
+  @media(max-width:900px){
+    display:none;
+   }
+}
+
+
+.header-card{
+  
+  margin:auto;
+  padding: 0 10px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+ border-radius:25px;
+ filter: drop-shadow(5px 5px 5px var(--black));
+ background:var(--gray);
+ color:var(--white);
+ transition: all .2s ease-out;
+ white-space:nowrap;
+ 
+}
+
+.header-card:hover{
+  border-radius:5px;
+  
+}
+
+.container-of-portfolio-grid{
+  margin: 150px auto;
+  padding: 0 50px;
+  max-width:1100px;
+  display:flex;
+  
+  gap:25px;
+  align-items:start;
+  @media(max-width:700px){
+    margin:100px auto;
+    flex-direction: column;
+    
+  }
+}
+
+.portfolio-grid{
+  margin: 0 auto;
+  display:grid;
+  
+  
+  
+  gap: 50px;
+ 
+  grid-template-columns: 1fr;
+ 
+  
+ 
+}
+
+.portfolio-grid-card{
+  margin:0 auto;
+  
+  max-width:300px;
+  max-height:300px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  flex-direction: column;
+  border-radius:20px;
+  filter: drop-shadow(5px 5px 5px var(--black));
+  background:var(--gray);
+  color:var(--white);
+  
+  transition: all 1s ease-in-out;
+  overflow:hidden;
+
+  @media(max-width:700px){
+    display:block;
+    max-height:none;
+    height:auto;
+    max-width:90%;
+   }
+}
+
+.portfolio-grid-card img{
+  width:100%;
+}
+
+/*text under each picture*/
+.portfolio-caption{
+  display:none;
+  color:var(--white);
+  padding: 0 40px;
+  transition: all 1s;
+  @media(max-width:700px){
+   display:block;
+  }
+
+}
+/*affects caption when hovering over grid card*/
+.portfolio-grid-card:hover .portfolio-caption{
+  display:block;
+  
+}
+
+.portfolio-grid-card:hover{
+  @media(min-width:701px){
+  max-width:500px;
+  width:500px;
+  border-radius:0;
+  max-height:none;
+  }
+}
+
+
+ /* Style the navigation menu */
+ .topnav {
+  overflow: hidden;
+  
+  position: relative;
+  @media(min-width:901px){
+    display:none;
+  }
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: var(--white);
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: var(--gray);
+  display: block;
+  position: absolute;
+  text-align:center;
+  width:10%;
+  right: 0;
+  top: 0;
+  border-radius:25px;
+  
+}
+
+/* Add a grey background color on mouse-over */
+
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: var(--gray);
+  color: var(--salmon);
+  width:fit-content;
+  border-radius:25px;
+} 
+ .resume{
+  margin: 100px auto auto auto;
+  text-align:center;
+  filter: drop-shadow(5px 5px 5px var(--black));
+ }
+ .email{
+  margin: 100px auto auto auto;
+ max-width:600px;
+  background:var(--gray);
+  border-radius:25px;
+  color:var(--white);
+  text-align: center;
+  padding:20px;
+  transition:all .5s;
+  filter: drop-shadow(5px 5px 5px var(--black));
+ }
+
+ .email h2{
+  color:var(--salmon);
+ }
+
+ .email:hover{
+  
+   border-radius:0;}
+ 
+ 
+
+ 
