@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Joseph Barnes</title>
+
+    <!--style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora&display=swap" 
+    rel="stylesheet">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id = "portfolio">
+
+    <!--mobile nav-->
+    <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="index.html" class="active"><h2 style = "color:var(--salmon);line-height: 5%;">Joseph Barnes</h2></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="portfolio.html"><h2>portfolio</h2></a>
+      <a href="contact.html"><h2>contact</h2></a>
+      <a href="about.html"><h2>about</h2></a>
+      <a href="resume.html"><h2>resume</h2></a>
+      <a href="https://www.linkedin.com/in/joseph-barnes-a4aa3b290/"><h2>LinkedIn</h2></a>
+      
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+<!--header grid-->
+<div class="header-grid" onclick="myFunction()">
+    <a href="index.html">
+    <div class = "header-card" style = "grid-column: 1 span 2;">
+        
+        <h2>Joseph</h2> <h2 style="color:var(--lightblue);">B<h2>arnes</h2>
+    </div>
+</a>
+<a href = "portfolio.html">
+    <div class="header-card" >
+        <h2>portfolio</h2>
+    </div>
+</a>
+<a href="contact.html">
+    <div class="header-card">
+        <h2>contact</h2>
+    </div>
+</a>
+<a href="about.html">
+    <div class="header-card"style="color:var(--salmon);">
+        <h2>about</h2>
+    </div>
+</a>
+
+<a href = "resume.html">
+    <div class="header-card">
+        <h2>resume</h2>
+    </div>
+</a>
+
+<a href = "https://www.linkedin.com/in/joseph-barnes-a4aa3b290/">
+    <div class="header-card">
+        <h2>LinkedIn</h2>
+    </div>
+</a>
+
+    
+</div>
+
+<!--email-->
+<div class = "email">
+    <h2>Joey Barnes</h2><br><p>Joey is a native of State College, Pennsylvania. He studied the fascinating world
+        of digital art right at home at Penn State.
+    </p>
+</div>
+
+
+    <!--script-->
+    <script src = "script.js"></script>
+</body>
+</html>
