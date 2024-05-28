@@ -379,7 +379,8 @@ transition: transform 1s,
 
  .blogpost{
   margin: 100px auto auto auto;
-  max-width:600px;
+  
+  width:fit-content;
    background:var(--gray);
    border-radius:25px;
    color:var(--white);
@@ -387,4 +388,30 @@ transition: transform 1s,
    padding:20px;
    transition:all .5s;
    filter: var(--shadow);
+   
+ }
+
+ .blogcontent{
+  display:flex;
+  flex-direction:row;
+@media(max-width:700px){
+  flex-direction:column;
+}
+ }
+ .blogtext{
+  margin:auto;
+  padding:20px;
+  width:fit-content;
+  text-align:left;
+ }
+
+
+ .blogcontent img{
+  margin:auto;
+  max-width:250px;
+  padding:20px;
+ }
+
+ .blogpost h2{
+  color:var(--salmon);
  }
