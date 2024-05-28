@@ -377,4 +377,14 @@ transition: transform 1s,
  
  
 
- 
+ .blogpost{
+  margin: 100px auto auto auto;
+  max-width:600px;
+   background:var(--gray);
+   border-radius:25px;
+   color:var(--white);
+   text-align: center;
+   padding:20px;
+   transition:all .5s;
+   filter: var(--shadow);
+ }
